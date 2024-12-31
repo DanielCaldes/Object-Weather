@@ -16,11 +16,16 @@ Visualización del día 31/12/2024:
 
 ## Estructura del Proyecto
 
-El proyecto está compuesto por tres archivos principales incluidos dentro de la carpeta app:
-
-- index.html: El archivo HTML que estructura la página web.
-- styles.css: El archivo CSS para el diseño y estilo visual de la página.
-- javascript.js: El archivo JavaScript que contiene la lógica para generar y mostrar la información del clima.
+```
+.
+├── README.md                            # Página mostrada en GitHub con información del proyecto
+├── app/
+│   ├── index.html                       # Archivo HTML donde se estructura la página web
+│   └── styles.css                       # Archivo CSS donde se define el diseño y estilo visual de la página
+│   └── javascript.js                    # Archivo JavaScript que contiene la lógica para generar y mostrar la información del clima
+└── assets/
+    ├── aplicacion-screenshoot.png       # Imagen mostrada en la página de GitHub
+```
 
 ## Instrucciones de Uso
 
