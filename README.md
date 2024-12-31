@@ -1,6 +1,6 @@
 # Clima Semanal
 
-Este proyecto es una página web que muestra el clima de una semana (7 días) de manera aleatoria, con información sobre la temperatura mínima y máxima, el tipo de clima, y la velocidad del viento. La información se genera dinámicamente utilizando JavaScript y se presenta de forma visual en una interfaz HTML.
+Este proyecto es una página web que muestra el clima de una semana empezando en la fecha real del usuario, con información aleatoria sobre la temperatura mínima y máxima, el tipo de clima, y la velocidad del viento. La información se genera dinámicamente utilizando JavaScript y se presenta de forma visual en una interfaz HTML.
 
 ## Capturas de Pantalla
 
