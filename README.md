@@ -29,8 +29,8 @@ Para ver el proyecto en funcionamiento:
 1. **Clona o descarga este repositorio**
    
    Si prefieres clonar el repositorio, usa el siguiente comando:
-   
-   bash git clone https://github.com/tu_usuario/tu_repositorio.git
+   ```bash
+   git clone https://github.com/DanielCaldes/Object-Weather.git
 
 3. **Probarlo online**
    
