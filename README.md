@@ -1,22 +1,34 @@
-2. **Abre los archivos en tu navegador**:
-   - Navega a la carpeta del proyecto y abre el archivo `index.html` en tu navegador favorito para ver la página web en funcionamiento.
+# Clima Semanal
 
-3. **Modifica el código**:
-   - Si deseas personalizar el comportamiento del clima o el diseño, puedes editar los archivos:
-     - `index.html` para la estructura de la página.
-     - `styles.css` para los estilos visuales.
-     - `javascript.js` para modificar la lógica que genera el clima aleatorio.
+Este proyecto es una página web que muestra el clima de una semana (7 días) de manera aleatoria, con información sobre la temperatura mínima y máxima, el tipo de clima, y la velocidad del viento. La información se genera dinámicamente utilizando JavaScript y se presenta de forma visual en una interfaz HTML.
 
 ## Capturas de Pantalla
 
-Aquí puedes agregar algunas capturas de pantalla para mostrar cómo se ve tu proyecto:
+Visualización del día 31/12/2024:
 
 ![Vista del proyecto](src/aplicacion-screenshoot.png)
 
-## Contribuciones
+## Características
 
-Las contribuciones son bienvenidas. Si deseas mejorar el proyecto, abre un **pull request** con tus cambios. Para problemas o sugerencias, por favor abre un **issue** en el repositorio.
+- **Clima Aleatorio:** Generación aleatoria de condiciones climáticas para cada día de la semana, incluyendo temperaturas, tipo de clima (soleado, lluvioso, nublado, etc.), y velocidad del viento.
+- **Visualización Semanal:** Muestra una vista de los 7 días de la semana con iconos representando el clima de cada día.
+- **Promedio de Temperaturas:** Calcula y muestra las temperaturas mínimas y máximas promedio para la semana.
 
-## Licencia
+## Estructura del Proyecto
 
-Este proyecto está bajo la licencia [MIT](LICENSE).
+El proyecto está compuesto por tres archivos principales:
+
+- index.html: El archivo HTML que estructura la página web.
+- styles.css: El archivo CSS para el diseño y estilo visual de la página.
+- javascript.js: El archivo JavaScript que contiene la lógica para generar y mostrar la información del clima.
+
+## Instrucciones de Uso
+
+Para ver el proyecto en funcionamiento:
+
+1. **Clona o descarga este repositorio**:
+   Si prefieres clonar el repositorio, usa el siguiente comando:
+   
+bash
+   git clone https://github.com/tu_usuario/tu_repositorio.git
+
