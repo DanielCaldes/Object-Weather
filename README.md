@@ -32,3 +32,6 @@ Para ver el proyecto en funcionamiento:
 bash
    git clone https://github.com/tu_usuario/tu_repositorio.git
 
+2. **Probarlo online**:
+   También puedes probar el proyecto directamente online con la siguiente URL:
+   https://danielcaldes.github.io/Object-Weather/app/index.html
