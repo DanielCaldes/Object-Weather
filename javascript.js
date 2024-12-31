@@ -74,7 +74,7 @@ function createDay(increment, dayIndex, monthDay, month, year) {
     day.weekDay = weekDay[(dayIndex + increment) % 7];
     day.monthDay = monthDay;
 
-    console.log(`Día ${monthDay} (${day.weekDay} ${monthDay} ${month+1} ${year}): \n${day.toString()}\n-----------------`);
+    console.log(`Día ${increment} (${day.weekDay} ${monthDay}/${month+1}/${year}): \n${day.toString()}\n-----------------`);
 
     return day;
 }
