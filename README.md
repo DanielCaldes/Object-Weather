@@ -16,7 +16,7 @@ Visualización del día 31/12/2024:
 
 ## Estructura del Proyecto
 
-El proyecto está compuesto por tres archivos principales:
+El proyecto está compuesto por tres archivos principales incluidos dentro de la carpeta app:
 
 - index.html: El archivo HTML que estructura la página web.
 - styles.css: El archivo CSS para el diseño y estilo visual de la página.
