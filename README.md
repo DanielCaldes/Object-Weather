@@ -26,12 +26,14 @@ El proyecto está compuesto por tres archivos principales incluidos dentro de la
 
 Para ver el proyecto en funcionamiento:
 
-1. **Clona o descarga este repositorio**:
+1. **Clona o descarga este repositorio**
+   
    Si prefieres clonar el repositorio, usa el siguiente comando:
    
-bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   bash git clone https://github.com/tu_usuario/tu_repositorio.git
 
-2. **Probarlo online**:
+3. **Probarlo online**
+   
    También puedes probar el proyecto directamente online con la siguiente URL:
+   
    https://danielcaldes.github.io/Object-Weather/app/index.html
