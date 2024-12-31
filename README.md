@@ -18,10 +18,10 @@ Visualización del día 31/12/2024:
 
 ```
 .
-├── app/
-│   ├── index.html                       # Archivo HTML donde se estructura la página web
-│   └── styles.css                       # Archivo CSS donde se define el diseño y estilo visual de la página
-│   └── javascript.js                    # Archivo JavaScript que contiene la lógica para generar y mostrar la información del clima
+└── app/
+    ├── index.html                       # Archivo HTML donde se estructura la página web
+    └── styles.css                       # Archivo CSS donde se define el diseño y estilo visual de la página
+    └── javascript.js                    # Archivo JavaScript que contiene la lógica para generar y mostrar la información del clima
 ```
 
 ## Instrucciones de Uso
