@@ -55,21 +55,27 @@ function createRandomWeather(){
     );
 }
 
-function createDay(increment, today, month, year) {
+function createDay(increment, dayIndex, monthDay, month, year) {
     const day = createRandomWeather();
 
-    const lastDayOfMonth = new Date(year, month + 1, 0).getDate();
-    let monthDay = today + increment;
-    if (monthDay > lastDayOfMonth) {
+    const lastDayOfMonth = new Date(year, month + 1, 0).getDate();   // Último día del mes
+
+    monthDay += increment;
+
+    if(monthDay > lastDayOfMonth){
         monthDay -= lastDayOfMonth;
+        if(++month == 12){
+            month = 0;
+            year++;
+        }
     }
-    
-    let weekDay = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-    day.weekDay = weekDay[monthDay % 7];
+
+    const weekDay = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    day.weekDay = weekDay[(dayIndex + increment) % 7];
     day.monthDay = monthDay;
-    
-    console.log(`Dia ${increment} (${day.weekDay}): \n${day.toString()}\n-----------------`);
-    
+
+    console.log(`Día ${monthDay} (${day.weekDay} ${monthDay} ${month+1} ${year}): \n${day.toString()}\n-----------------`);
+
     return day;
 }
 
@@ -108,7 +114,7 @@ maxTemperatureSum = 0;
 const date = new Date();
 
 for (let i = 0; i < daysNumber; i++) {
-    let day = createDay(i,date.getDay(),date.getMonth(),date.getFullYear);
+    let day = createDay(i, date.getDay(),date.getDate(),date.getMonth(),date.getFullYear());
     days.push(day);
     minTemperatureSum += day.minTemperature;
     maxTemperatureSum += day.maxTemperature;
