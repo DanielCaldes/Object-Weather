@@ -6,7 +6,7 @@ Este proyecto es una página web que muestra el clima de una semana (7 días) de
 
 Visualización del día 31/12/2024:
 
-![Vista del proyecto](src/aplicacion-screenshoot.png)
+![Vista del proyecto](assets/aplicacion-screenshoot.png)
 
 ## Características
 
