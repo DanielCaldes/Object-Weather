@@ -1,3 +1,5 @@
+
+// Auxiliar para obtener aleatorios
 function randomInt(min,max){
     return Math.floor( Math.random() * (max - min + 1)) + min;
 }
@@ -43,6 +45,7 @@ function createWeather(minTemperature, maxTemperature, weatherType, windSpeed){
     return weather;
 }
 
+// Generar un weather con parametros automaticos aleatorios
 function createRandomWeather(){
     const weatherTypes = ['soleado','parcialmente nublado','nublado','lluvia','nieve'];
     let minTemperature = randomInt(10, 20)
@@ -55,6 +58,7 @@ function createRandomWeather(){
     );
 }
 
+// Generar un objeto weather añadiendo informacion sobre el día
 function createDay(increment, dayIndex, monthDay, month, year) {
     const day = createRandomWeather();
 
@@ -79,6 +83,7 @@ function createDay(increment, dayIndex, monthDay, month, year) {
     return day;
 }
 
+// Renderizar un objeto día en el DOM
 function renderDay(weather, container) {
     const dayDiv = document.createElement("div");
     dayDiv.classList.add("day-info-container");
@@ -98,12 +103,20 @@ function renderDay(weather, container) {
     container.appendChild(dayDiv);
 }
 
+// Renderizar el resumen de temperaturas en el DOM
 function renderTemperatureSummary(averageMin, averageMax, container) {
     container.innerHTML = `
         <p class="temp-min">Temperatura media mínima: ${averageMin}°C</p>
         <p class="temp-max">Temperatura media máxima: ${averageMax}°C</p>
     `;
 }
+
+
+/*
+* ================================================
+*                 CÓDIGO PRINCIPAL
+* ================================================
+*/
 
 const daysNumber = 7;
 let days = [];    // Array unidimensional con los datos de la temperatura de una semana 
@@ -113,6 +126,7 @@ maxTemperatureSum = 0;
 
 const date = new Date();
 
+// Generar los días
 for (let i = 0; i < daysNumber; i++) {
     let day = createDay(i, date.getDay(),date.getDate(),date.getMonth(),date.getFullYear());
     days.push(day);
@@ -120,13 +134,14 @@ for (let i = 0; i < daysNumber; i++) {
     maxTemperatureSum += day.maxTemperature;
 }
 
-//Calcular la media de las temperaturas máximas y la media de las temperaturas mínimas
+// Calcular la media de las temperaturas máximas y la media de las temperaturas mínimas
 averageMinTemperature = Math.round(minTemperatureSum/days.length);
 averageMaxTemperature = Math.round(maxTemperatureSum/days.length);
 
 console.log("Temperatura minima media:" + averageMinTemperature);
 console.log("Temperatura maxima media:" + averageMaxTemperature);
 
+// Renderizar los datos en el DOM
 if (typeof document !== 'undefined'){
     const weatherContainer = document.getElementById("weather-container");
     days.forEach(day => renderDay(day, weatherContainer));
