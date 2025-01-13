@@ -1,12 +1,12 @@
 # Clima Semanal
 
-Este proyecto es una página web que muestra el clima de una semana (7 días) de manera aleatoria, con información sobre la temperatura mínima y máxima, el tipo de clima, y la velocidad del viento. La información se genera dinámicamente utilizando JavaScript y se presenta de forma visual en una interfaz HTML.
+Este proyecto es una página web que muestra el clima de una semana empezando en la fecha real del usuario, con información aleatoria sobre la temperatura mínima y máxima, el tipo de clima, y la velocidad del viento. La información se genera dinámicamente utilizando JavaScript y se presenta de forma visual en una interfaz HTML.
 
 ## Capturas de Pantalla
 
 Visualización del día 31/12/2024:
 
-![Vista del proyecto](src/aplicacion-screenshoot.png)
+![Vista del proyecto](assets/aplicacion-screenshoot.png)
 
 ## Características
 
@@ -16,19 +16,26 @@ Visualización del día 31/12/2024:
 
 ## Estructura del Proyecto
 
-El proyecto está compuesto por tres archivos principales:
-
-- index.html: El archivo HTML que estructura la página web.
-- styles.css: El archivo CSS para el diseño y estilo visual de la página.
-- javascript.js: El archivo JavaScript que contiene la lógica para generar y mostrar la información del clima.
+```
+.
+└── app/
+    ├── index.html                       # Archivo HTML donde se estructura la página web
+    └── styles.css                       # Archivo CSS donde se define el diseño y estilo visual de la página
+    └── javascript.js                    # Archivo JavaScript que contiene la lógica para generar y mostrar la información del clima
+```
 
 ## Instrucciones de Uso
 
 Para ver el proyecto en funcionamiento:
 
-1. **Clona o descarga este repositorio**:
-   Si prefieres clonar el repositorio, usa el siguiente comando:
+1. **Clona o descarga este repositorio**
    
-bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   Si prefieres clonar el repositorio, usa el siguiente comando:
+   ```bash
+   git clone https://github.com/DanielCaldes/Object-Weather.git
 
+3. **Probarlo online**
+   
+   También puedes probar el proyecto directamente online con la siguiente URL:
+   
+   https://danielcaldes.github.io/Object-Weather/app/index.html
